@@ -1,0 +1,35 @@
+Aim: To build a hospital enterprise architecture where patients continuously asks for service from patient pool and the hospital server will only serve the patient if that particular service is available via message queue.
+
+Step 1:
+Edit configuration.xml file accordingly to enable type of services to be provided.
+
+Step 2:
+Use make command to link Hospital_Functions.c and Hospital_Server.c file to generate hospital executable.
+And then execute it with cmd: ./hospital configuration.xml
+
+Step 3:
+Parallely do the following in another terminal:
+gcc Patient_Pool.c -o Patient_Pool
+./Patient_Pool
+
+Step 4:
+Enter hospital details such as hospital name, hospital address, number of wards required, id of the ward, name of the ward, types of rooms required, number of rooms required and wait for patient to enter type of service and severity.
+
+Note:
+-> You can enter maximum of 5 wards in number of wards field, as there are only 5 wards available in the hospital
+-> Name of the ward can only be of type "eye", "neuron", "heart", "bones" and "skin"
+-> You can enter maximum of 3 type of rooms in room type field, as there are 3 types of rooms available i.e. ac, non-ac and deluxe
+
+Step 5:
+Enter type of service that patient needs, also enter level of severity and wait for server to check whether service is available or not.
+
+Note:
+-> Type of service can only be of type "eye", "neuron", "heart", "bones" and "skin"
+-> Severity level can be of two type: 1 for normal checkup and 2 for operation
+
+Step 6:
+Enter patient details such as patient name and type of room that patient needs, and then wait for report to get generated after treatment is finished.
+
+Note:
+-> Type of room should be selected only from the available rooms (created during entering hospital details)
+
