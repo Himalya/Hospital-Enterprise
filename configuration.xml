@@ -1,0 +1,12 @@
+<configuration>
+
+	<input_file_param type = "doctor">
+		<doctor>
+			<doctor_eye enable = "1"></doctor_eye>
+			<doctor_neuron enable = "1"></doctor_neuron>
+			<doctor_heart enable = "1"></doctor_heart>
+			<doctor_bones enable = "1"></doctor_bones>
+			<doctor_skin enable = "1"></doctor_skin>	
+		</doctor>
+	</input_file_param>
+</configuration>
